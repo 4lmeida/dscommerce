@@ -12,8 +12,8 @@ import org.springframework.transaction.annotation.Transactional;
 import com.devsuperior.dscommerce.dto.ProductDTO;
 import com.devsuperior.dscommerce.entities.Product;
 import com.devsuperior.dscommerce.repositories.ProductRepository;
-import com.devsuperior.dscommerce.services.exceptions.DatabaseException;
-import com.devsuperior.dscommerce.services.exceptions.ResourceNotFoundExeption;
+import com.devsuperior.dscommerce.services.exception.DatabaseException;
+import com.devsuperior.dscommerce.services.exception.ResourceNotFoundExeption;
 
 import jakarta.persistence.EntityNotFoundException;
 
