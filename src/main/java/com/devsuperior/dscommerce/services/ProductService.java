@@ -15,7 +15,7 @@ import com.devsuperior.dscommerce.repositories.ProductRepository;
 import com.devsuperior.dscommerce.services.exception.DatabaseException;
 import com.devsuperior.dscommerce.services.exception.ResourceNotFoundExeption;
 
-import jakarta.persistence.EntityNotFoundException;
+import javax.persistence.EntityNotFoundException;
 
 @Service
 public class ProductService {
@@ -25,34 +25,28 @@ public class ProductService {
 
 	@Transactional(readOnly = true)
 	public ProductDTO findById(Long id) {
-
 		Product product = repository.findById(id)
 				.orElseThrow(() -> new ResourceNotFoundExeption("Recurso não encontrado"));
 		return new ProductDTO(product);
-
 	}
 
 	@Transactional(readOnly = true)
-	public Page<ProductDTO> findAll(Pageable pageable) {
-		Page<Product> result = repository.findAll(pageable);
+	public Page<ProductDTO> findAll(String name, Pageable pageable) {
+		Page<Product> result = repository.searchByname(name, pageable);
 		return result.map(x -> new ProductDTO(x));
-
 	}
 
 	@Transactional
 	public ProductDTO insert(ProductDTO dto) {
-
 		Product entity = new Product();
 		copyDtoToEntity(dto, entity);
 		entity = repository.save(entity);
 		return new ProductDTO(entity);
-
 	}
 
 	@Transactional
 	public ProductDTO update(Long id, ProductDTO dto) {
 		try {
-
 			Product entity = repository.getReferenceById(id);
 			copyDtoToEntity(dto, entity);
 			entity = repository.save(entity);
