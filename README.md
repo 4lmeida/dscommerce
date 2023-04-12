@@ -75,7 +75,7 @@ DSCommerce é uma sistema web de front-end e back-end construida ao longo da for
 
 ![Confimation](/src/main/java/assets/dscommerce-confirmation.png)
 
-# Modelo conceitual  :page_with_curl:
+# Modelo conceitual :page_with_curl:
 
 - Modelo conceitual
 
@@ -159,7 +159,7 @@ decrementar a quantidade de um item no carrinho de compras.
 
 ## BD :floppy_disk:
 
-###Algumas tabelas do banco de dados
+### Algumas tabelas do banco de dados
 
 ### Usuários:
 
