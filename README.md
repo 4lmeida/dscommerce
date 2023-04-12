@@ -3,6 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=spring&message=framework&color=blue&style=for-the-badge&logo=SPRING"/>
   <img src="https://img.shields.io/static/v1?label=Apache&message=Dependency manager&color=blue&style=for-the-badge&logo=apache"/>
+   <img src="https://img.shields.io/static/v1?label=Postman&message=API management&color=blue&style=for-the-badge&logo=postman"/>
   <img src="https://img.shields.io/static/v1?label=Railway&message=deploy&color=blue&style=for-the-badge&logo=railway"/>
   <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
    <img src="http://img.shields.io/static/v1?label=FASE&message=BACKEND&color=GREEN&style=for-the-badge"/>
@@ -17,6 +18,8 @@
 :small_blue_diamond: [Funcionalidades](#funcionalidades)
 
 :small_blue_diamond: [Deploy da Aplicação](#layout-e-deploy-da-aplicação-dash)
+
+:small_blue_diamond: [Modelo Conceitual](#Modelo-conceitual-page_with_curl)
 
 :small_blue_diamond: [Pré-requisitos](#pré-requisitos)
 
@@ -46,7 +49,7 @@ DSCommerce é uma sistema web de front-end e back-end construida ao longo da for
 
 ## Layout e Deploy da Aplicação :dash:
 
-> Link do deploy da aplicação. Netlify: https://dscommerce-l4.netlify.app
+> Link do deploy da aplicação. Railway: https://dscommerce.up.railway.app
 
 - Tour no site
 
@@ -72,9 +75,15 @@ DSCommerce é uma sistema web de front-end e back-end construida ao longo da for
 
 ![Confimation](/src/main/java/assets/dscommerce-confirmation.png)
 
+# Modelo conceitual  :page_with_curl:
+
+- Modelo conceitual
+
+![Modelo conceitual](/src/main/java/assets/modelo-conceitual-dscommerce.png)
+
 - Padrão camadas
 
-![Camadas](/src/main/java/assets/modelo-conceitual-dscommerce.png)
+![Camadas](/src/main/java/assets/padrao-camadas.png)
 
 
 
